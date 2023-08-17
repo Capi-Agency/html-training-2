@@ -1,4 +1,4 @@
-#HTML Traning Day 2
+# HTML Traning Day 2
 
 Tạo trang home theo các section
 - Nguyên: section 4
