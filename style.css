@@ -1,0 +1,12 @@
+@import url(https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap);
+
+header {
+    text-decoration: none;
+    box-shadow: 0px 7px 5px 0px rgba(47, 160, 67, 0.15);
+}
+
+#banner {
+
+    display: flex;
+    justify-content: center;
+}
