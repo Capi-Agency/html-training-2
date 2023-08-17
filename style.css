@@ -1,37 +1,55 @@
-@import url(https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2';
+}
 
 header {
-    text-decoration: none;
+    background: #FFF;
+
+    /* Shadow 2 */
+    box-shadow: 0px 7px 5px 0px rgba(47, 160, 67, 0.15);
     display: flex;
-    padding: 30px 320px;
+    flex-direction: row;
     justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.menu {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    gap: 28px;
     align-items: center;
+
 }
 
 .logo {
-    list-style-type: none;
-    display: flex;
-    gap: 60px;
-    padding: 29px 230px;
+    width: 100px;
+    height: 35.064px;
+   
 }
 
-header>ul {
-    display: flex;
-    list-style-type: none;
-    gap: 60px;
-    text-decoration: none;
-}
 
 #banner {
     display: flex;
     justify-content: center;
 }
 
-#search { 
+.search {
     border-radius: 40px;
     border: 1px solid var(--grey-2, #939393);
     background: var(--grey-3, #F8FCFF);
+    display: flex;
+width: 236px;
+height: 40px;
+padding: 0px 16px;
+align-items: center;
+gap: 8px;
+opacity: 0.5;
 }
+
 #seacher>p {
     color: #939393;
 }
