@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Baloo 2;
+}
+.post{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    height: 1020.56px;
+    justify-content: center;
+    
+}
+.post-max{
+    width: 541px;
+    gap: 13px;
+}
+.title{
+    color: var(--green-1, #006752);
+}
+.tag{
+    border-color: linear-gradient(0deg, rgba(82, 175, 162, 0.15) 0%, rgba(82, 175, 162, 0.15) 100%), #FFF;;
+    color: var(--green-1, #006752);
+    border-style: solid;
+    border-radius: 4px;
+    height: 20px;
+}
+
+.post-item{
+    display: flex; 
+}
+.content{
+    display: flex;
+    flex-direction: ;
+}
