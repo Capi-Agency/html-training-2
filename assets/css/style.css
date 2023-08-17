@@ -1,8 +1,40 @@
-main {
-    width: 100%;
-
-    .banner {
-        background-image: url("paper.gif");
-        background-color: #cccccc;
-    }
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
+
+main {
+    margin: 0 124px ;
+
+    background-color: whitesmoke;
+
+    /* & .banner {
+        height: 691.634px;
+        width: 1366px;
+        background-image: url("assets/images/vector.png");
+        background-color: aliceblue;
+        object-fit: cover;
+    } */
+
+    & img {
+        object-fit: cover;
+    }
+
+    /* & .productLayout {
+        display: none;
+    }
+    & .faqLayout {
+        display: none;
+    }
+    .menuLayout {
+        display: none;
+    }
+    .menuLayout {
+        display: none;
+    } */
+
+
+}
+
+
