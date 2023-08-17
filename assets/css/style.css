@@ -1,0 +1,8 @@
+main {
+    width: 100%;
+
+    .banner {
+        background-image: url("paper.gif");
+        background-color: #cccccc;
+    }
+}
