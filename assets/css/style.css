@@ -1,16 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo 2";
+}
+
+main {
+  margin: 0 124px;
+
+  background-color: whitesmoke;
+
+  /* & .banner {
+      height: 691.634px;
+      width: 1366px;
+      background-image: url("assets/images/vector.png");
+      background-color: aliceblue;
+      object-fit: cover;
+  } */
+
+  & img {
+    object-fit: cover;
+  }
+
+  /* & .productLayout {
+      display: none;
+  }
+  & .faqLayout {
+      display: none;
+  }
+  .menuLayout {
+      display: none;
+  }
+  .menuLayout {
+      display: none;
+  } */
+}
+
 .standard {
+  position: relative;
+  min-height: 900px;
+  max-height: fit-content;
+
+  display: flex;
+  justify-content: center;
+
   font-family: "Baloo 2";
   text-align: center;
-  position: relative;
-  padding: 40px;
-  background-image: url("../images/BG.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+.standard__bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  z-index: 1;
+}
+.standard__bg > img {
+  height: inherit;
+  width: 100%;
+
+  object-fit: fill;
+}
+.standard__main {
+  position: absolute;
+  top: 10%;
+
+  z-index: 2;
 }
 .standard > img {
   position: absolute;
   left: 20%;
+.standard__main > img {
+  position: absolute;
+  left: 20%;
 }
+
 h2,
 p {
   margin: 0;
@@ -37,6 +103,11 @@ p {
   flex-wrap: wrap;
   gap: 88px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+  margin: 0 auto;
 }
 
 .standard__item {
@@ -47,6 +118,16 @@ p {
   background-color: #fd5c37;
   border-radius: 24px;
   justify-content: space-between;
+  box-shadow: 0px 6px 16px 0px #f9862640;
+  width: 300px;
+  gap: 36px;
+  padding: 28px;
+  justify-content: space-between;
+
+  color: #fff;
+  background-color: #fd5c37;
+  border-radius: 24px;
+
   box-shadow: 0px 6px 16px 0px #f9862640;
 }
 .standard__item:first-child {
@@ -67,4 +148,39 @@ p {
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
+}
+
+.post {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  height: 1020.56px;
+  justify-content: center;
+}
+.post-max {
+  width: 541px;
+  gap: 13px;
+}
+.title {
+  color: var(--green-1, #006752);
+}
+.tag {
+  border-color: linear-gradient(
+      0deg,
+      rgba(82, 175, 162, 0.15) 0%,
+      rgba(82, 175, 162, 0.15) 100%
+    ),
+    #fff;
+  color: var(--green-1, #006752);
+  border-style: solid;
+  border-radius: 4px;
+  height: 20px;
+}
+
+.post-item {
+  display: flex;
+}
+.content {
+  display: flex;
+  flex-direction: column;
 }
