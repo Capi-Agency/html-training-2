@@ -505,6 +505,7 @@ p {
             object-fit: contain;
         }
     }
+}
 
 footer {
  display: block;
@@ -569,8 +570,6 @@ align-items: center;
 gap: 10px;
 border-radius: 42px;
 background: var(--green-1, #006752);
-
-/* Shadow 2 */
 box-shadow: 0px 7px 5px 0px rgba(47, 160, 67, 0.15);
 }
 .icon-cart {
@@ -582,7 +581,5 @@ align-items: center;
 gap: 10px;
 border-radius: 42px;
 background: var(--green-1, #006752);
-
-/* Shadow 2 */
 box-shadow: 0px 7px 5px 0px rgba(47, 160, 67, 0.15);
 }
