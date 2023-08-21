@@ -273,15 +273,12 @@ p {
 }
 
 .title {
-    color: var(--green-1, #006752);
+    color: #006752;
 }
 
 .tag {
-    border-color: linear-gradient(0deg,
-            rgba(82, 175, 162, 0.15) 0%,
-            rgba(82, 175, 162, 0.15) 100%),
-        #fff;
-    color: var(--green-1, #006752);
+    border-color: linear-gradient(0deg, rgba(82, 175, 162, 0.15) 0%, rgba(82, 175, 162, 0.15) 100%), #fff;
+    color: #006752;
     border-style: solid;
     border-radius: 4px;
     height: 20px;
@@ -296,7 +293,6 @@ p {
     flex-direction: column;
 }
 
-
 /* aboutUs */
 
 .core-layout {
@@ -308,6 +304,7 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
+        color: #006752;
 
         & .core-title-bg {
             padding: 2px 8px;
@@ -320,6 +317,8 @@ p {
 
     & .core-content {
         display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 60px;
         margin-top: 40px;
 
@@ -327,7 +326,7 @@ p {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            width: 100%;
+            width: 480px;
             padding: 16px 24px;
             border-radius: 24px;
             box-shadow: 0px 5px 8px 0px rgba(167, 164, 159, 0.20);
@@ -341,6 +340,7 @@ p {
                 justify-content: center;
                 align-items: center;
                 height: 200px;
+                width: 100%;
 
                 & h5 {
                     color: #006752;
@@ -360,7 +360,7 @@ p {
                 flex-direction: column;
                 flex-wrap: wrap;
                 text-align: center;
-                gap: 8px;
+                gap: 16px;
 
                 & .core-card-row2-content {
 
@@ -374,9 +374,10 @@ p {
 
                     & p {
                         display: flex;
-                        color: #444;
                         font-weight: 400;
-                        line-height: 150%;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #444;
                     }
                 }
 
@@ -393,24 +394,113 @@ p {
 
 }
 
-.intro-layout {
+.intro-layout-1 {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 32px;
+    justify-content: center;
+    gap: 80px;
+    height: auto;
 
-    & .intro-content {
+    & .intro-content-1 {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         gap: 24px;
+        width: 50%;
+
+        & h5 {
+            display: flex;
+            color: #006752;
+            font-family: Baloo 2;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+            text-transform: uppercase;
+            word-wrap: break-word;
+        }
     }
-    & .intro-image {
+
+    & .intro-image-1 {
         width: 400px;
         height: auto;
 
         & img {
-            width: inherit;
+            width: auto;
             right: 0;
             bottom: 0;
         }
     }
+}
+
+.intro-layout-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    height: auto;
+    margin-bottom: 40px;
+
+    & .intro-content-2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 24px;
+        width: 50%;
+
+        & h5 {
+            display: flex;
+            color: #006752;
+            font-family: Baloo 2;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+            text-transform: uppercase;
+            word-wrap: break-word;
+        }
+    }
+
+    & .intro-image-2 {
+        width: auto;
+        height: auto;
+
+        & img {
+            width: auto;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+.partner-layout {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 40px;
+
+    & .partner-title-bg {
+        display: flex;
+        padding: 2px 8px;
+        border-radius: 12px;
+        color: #006752;
+        background-color: #cae8dc;
+        width: fit-content;
+    }
+
+    & .partner-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+
+        & img {
+            object-fit: contain;
+        }
+    }
+
 }
