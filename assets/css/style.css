@@ -682,19 +682,115 @@ footer {
                     width: 100%;
                 }
             }
+
+
         }
 
-        & .product-slider {
+
+    }
+
+    & .product-slider {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        width: auto;
+        height: auto;
+
+        & .slider-layout {
             display: flex;
-            height: auto;
-            gap: 8px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 16px;
+            gap: 24px;
 
-            background-color: aliceblue;
+            & img {
+                object-fit: contain;
+            }
 
-            & .slider-btn {
+            & .slider-image {
+                width: 400px;
+                height: 400px;
+                align-items: center;
+                position: relative;
 
+                background-color: #fff;
 
+                & .sm-left {
+                    position: absolute;
+                    z-index: 1;
+                    left: 40px;
+                    bottom: 4px;
+                    width: 200px;
+                    height: auto;
+                }
+
+                & .lg-right {
+                    position: absolute;
+                    width: 200px;
+                    height: auto;
+                    bottom: 4px;
+                    right: 60px;
+                }
+            }
+        }
+
+        & .slider-pagination {
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+        }
+    }
+}
+
+.faq-layout {
+    display: flex;
+    gap: 24px;
+
+    & .faq-ask {
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        width: auto; 
+        height: auto;
+
+        gap: 16px;
+
+        background-color: whitesmoke;
+
+        & .ask-title {
+
+            & h2 {
+                color: #FD5C37;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 120%;
+                text-transform: uppercase;
+            }
+            
+
+        }
+
+        & .ask-content {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            & h3 {
+                display: flex;
+                color: #006752;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 120%;
             }
         }
     }
+
+    & .faq-answer {
+        border-radius: 8px;
+        color: white;
+        background-color: #E3672B;
+    }
+
 }
