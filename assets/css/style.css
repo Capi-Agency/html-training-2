@@ -76,6 +76,18 @@ p {
     text-transform: uppercase;
 }
 
+.post-maintitle{
+    display: flex;
+    color: var(--green-1, #006752);
+    justify-content: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Baloo 2;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+
+
 .standard__h {
     margin: 0 auto;
     background: #cae8dc;
@@ -137,6 +149,32 @@ p {
     justify-content: center;
 }
 
+.post-max{
+    width: 541px;
+    gap: 13px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.post-news{
+    color: var(--grey-1, #444);
+    font-family: Baloo 2;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 25.2px */
+}
+
+.post-list{
+    gap: 32px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: fit-content;
+}
+
 .post-max {
     width: 541px;
     gap: 13px;
@@ -158,13 +196,67 @@ p {
 }
 
 .post-item {
-    display: flex;
+  display: flex;
+  gap: 12px;
 }
 
 .content {
     display: flex;
     flex-direction: column;
 }
+
+
+.post-more{
+    padding-left: 220px ;
+    color: var(--green-1, #006752);
+}
+
+.post-content{
+    display: flex;
+    color: var(--grey-1, #444);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+    width: 210px;
+}
+
+.post-title{
+    font-size: 32px;
+    color: var(--green-1, #006752);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 38.4px */
+    text-transform: uppercase;
+}
+
+.post-short{
+    font-family: Baloo 2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    color: #746C6E;
+    text-align: justify;
+}
+
+.post-tag{
+    border-radius: 4px;
+    background: linear-gradient(0deg, rgba(82, 175, 162, 0.15) 0%, rgba(82, 175, 162, 0.15) 100%), #FFF;
+    width: fit-content;
+    color: var(--green-1, #006752);
+    text-align: justify;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 15px */
+    text-transform: uppercase;
+    display: flex;
+    height: 15px;
+    padding: 8px;
+    justify-content: center;
 
 .product-layout {
     text-align: center;
@@ -259,6 +351,12 @@ p {
     }
 }
 
+
+.post-morebtn{
+    padding-left: 220px ;
+    color: var(--green-1, #006752);
+  }
+  
 .post {
     display: flex;
     flex-direction: row;
@@ -267,6 +365,15 @@ p {
     justify-content: center;
 }
 
+.more-btn{
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;   
+    gap: 10px;
+    border-radius: 40px;
+    border: 0.75px solid var(--grey-1, #444);
+    background: #FFF;
+ }
 .post-max {
     width: 541px;
     gap: 13px;
