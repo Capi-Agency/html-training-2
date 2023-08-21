@@ -507,12 +507,13 @@ p {
     }
 }
 
+/* footer */
+
 footer {
- display: block;
+    display: block;
 }
-.grid {
-  
-}
+
+.grid {}
 
 .footer-item {
     display: flex;
@@ -555,31 +556,35 @@ footer {
     justify-content: center;
     padding-top: 25px;
 }
+
 .icon {
     display: inline-flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
 }
+
 .icon-share {
     display: flex;
-width: 52px;
-height: 52px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-border-radius: 42px;
-background: var(--green-1, #006752);
-box-shadow: 0px 7px 5px 0px rgba(47, 160, 67, 0.15);
+    width: 52px;
+    height: 52px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 42px;
+    background: var(--green-1, #006752);
+    box-shadow: 0px 7px 5px 0px rgba(47, 160, 67, 0.15);
 }
+
 .icon-cart {
     display: flex;
-width: 52px;
-height: 52px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-border-radius: 42px;
-background: var(--green-1, #006752);
-box-shadow: 0px 7px 5px 0px rgba(47, 160, 67, 0.15);
+    width: 52px;
+    height: 52px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 42px;
+    background: var(--green-1, #006752);
+    box-shadow: 0px 7px 5px 0px rgba(47, 160, 67, 0.15);
 }
+
