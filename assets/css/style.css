@@ -6,20 +6,19 @@
 main{
     gap: 93.43px;
 }
-.post__title{
+.post-maintitle{
     display: flex;
     color: var(--green-1, #006752);
     justify-content: center;
     font-feature-settings: 'clig' off, 'liga' off;
-
-    /* Heading 1 */
     font-family: Baloo 2;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 120%; /* 57.6px */
+    line-height: 120%;
     text-transform: uppercase;
 }
+
 .post{
     padding-top: 70px;
     display: flex;
@@ -31,16 +30,16 @@ main{
     
 }
 
-.post__max{
+.post-max{
     width: 541px;
     gap: 13px;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    
 }
-p{
+
+.post-news{
     color: var(--grey-1, #444);
     font-feature-settings: 'clig' off, 'liga' off;
     
@@ -52,27 +51,31 @@ p{
     line-height: 140%; /* 25.2px */
 }
 
-.post__list{
+.post-list{
     gap: 32px;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     height: fit-content;
 }
-.post__item{
+
+.post-item{
     display: flex;
     gap: 12px; 
 }
-.post__footer{
+
+.post-footer{
     display: flex;
     flex-direction: row;
     gap: 23px;
 }
+
 .post-more{
     padding-left: 220px ;
     color: var(--green-1, #006752);
 }
-.content{
+
+.post-content{
     display: flex;
     color: var(--grey-1, #444);
     font-feature-settings: 'clig' off, 'liga' off;
@@ -82,7 +85,8 @@ p{
     line-height: 140%; /* 22.4px */
     width: 210px;
 }
-.title{ assets/css/style.css
+
+.post-title{
     font-size: 32px;
     color: var(--green-1, #006752);
     font-size: 32px;
@@ -91,7 +95,8 @@ p{
     line-height: 120%; /* 38.4px */
     text-transform: uppercase;
 }
-.short{
+
+.post-short{
     font-family: Baloo 2;
     font-size: 16px;
     font-style: normal;
@@ -100,7 +105,8 @@ p{
     color: #746C6E;
     text-align: justify;
 }
-.tag{
+
+.post-tag{
     border-radius: 4px;
     background: linear-gradient(0deg, rgba(82, 175, 162, 0.15) 0%, rgba(82, 175, 162, 0.15) 100%), #FFF;
     width: fit-content;
@@ -121,18 +127,18 @@ p{
     align-items: center;
     gap: 10px;
 }
-.more{
+
+.post-morebtn{
     display: flex;
     padding:96px 0;
     justify-content: center;
 }
-.more__btn{
+
+.more-btn{
     display: flex;
     padding: 8px 24px;
-    justify-content: center;
-   
+    justify-content: center;   
     gap: 10px;
-
     border-radius: 40px;
     border: 0.75px solid var(--grey-1, #444);
     background: #FFF;
