@@ -1,66 +1,21 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Baloo 2';
 }
-
-main {
-    margin: 0 124px;
-
-    & img {
-        object-fit: cover;
-    }
+main{
+    gap: 93.43px;
 }
-
-.standard {
-    position: relative;
-    min-height: 900px;
-    max-height: fit-content;
-
+.post-maintitle{
     display: flex;
+    color: var(--green-1, #006752);
     justify-content: center;
-
-    font-family: "Baloo 2";
-    text-align: center;
-}
-
-.standard__bg {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-
-    z-index: 1;
-}
-
-.standard__bg>img {
-    height: inherit;
-    width: 100%;
-
-    object-fit: fill;
-}
-
-.standard__main {
-    position: absolute;
-    top: 10%;
-
-    z-index: 2;
-
-}
-
-.standard>img {
-    position: absolute;
-    left: 20%;
-}
-
-.standard__main>img {
-    position: absolute;
-    left: 20%;
-}
-
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Baloo 2;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
 h2,
 p {
     margin: 0;
@@ -129,14 +84,50 @@ p {
     text-transform: uppercase;
 }
 
-.post {
+.post{
+    padding-top: 70px;
     display: flex;
     flex-direction: row;
     gap: 32px;
     height: 1020.56px;
+    height: fit-content;
     justify-content: center;
+    
 }
 
+.post-max{
+    width: 541px;
+    gap: 13px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.post-news{
+    color: var(--grey-1, #444);
+    font-feature-settings: 'clig' off, 'liga' off;
+    
+    /* Heading 4 */
+    font-family: Baloo 2;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 25.2px */
+}
+
+.post-list{
+    gap: 32px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: fit-content;
+}
+
+.post-item{
+    display: flex;
+    gap: 12px; 
+  }
 .post-max {
     width: 541px;
     gap: 13px;
@@ -161,11 +152,67 @@ p {
     display: flex;
 }
 
-.content {
+.post-footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 23px;
 }
 
+.post-more{
+    padding-left: 220px ;
+    color: var(--green-1, #006752);
+}
+
+.post-content{
+    display: flex;
+    color: var(--grey-1, #444);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+    width: 210px;
+}
+
+.post-title{
+    font-size: 32px;
+    color: var(--green-1, #006752);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 38.4px */
+    text-transform: uppercase;
+}
+
+.post-short{
+    font-family: Baloo 2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    color: #746C6E;
+    text-align: justify;
+}
+
+.post-tag{
+    border-radius: 4px;
+    background: linear-gradient(0deg, rgba(82, 175, 162, 0.15) 0%, rgba(82, 175, 162, 0.15) 100%), #FFF;
+    width: fit-content;
+
+    color: var(--green-1, #006752);
+    text-align: justify;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 15px */
+    text-transform: uppercase;
+
+    display: flex;
+
+    height: 15px;
+    padding: 8px;
+    justify-content: center;
+  }
 .product-layout {
     text-align: center;
     margin: 40px 0;
@@ -240,32 +287,20 @@ p {
 
 .card-image {
     align-items: center;
-    padding: 8px;
-    position: relative;
-    height: 268px;
-    min-width: 268px;
-
-    & .img-1 {
-        position: absolute;
-        z-index: 1;
-        left: 20px;
-        bottom: 4px;
-    }
-
-    & .img-2 {
-        position: absolute;
-        right: 36px;
-        bottom: 4px;
-    }
+    gap: 10px;
 }
 
+  .post-morebtn{
+    display: flex;
+    padding:96px 0;
+    justify-content: center;
+  }
 .post {
     display: flex;
-    flex-direction: row;
-    gap: 32px;
-    height: 1020.56px;
+    padding:96px 0;
     justify-content: center;
 }
+
 
 .post-max {
     width: 541px;
