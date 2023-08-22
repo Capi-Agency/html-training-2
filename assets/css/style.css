@@ -43,12 +43,11 @@
     color: var(--grey-1, #444);
     font-feature-settings: 'clig' off, 'liga' off;
     
-    /* Heading 4 */
     font-family: Baloo 2;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 140%; /* 25.2px */
+    line-height: 140%;
 }
 
 .post-list{
@@ -82,7 +81,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%;
     width: 210px;
 }
 
@@ -92,7 +91,7 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    line-height: 120%; /* 38.4px */
+    line-height: 120%;
     text-transform: uppercase;
 }
 
@@ -101,7 +100,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
     color: #746C6E;
     text-align: justify;
 }
@@ -116,7 +115,7 @@
     font-size: 10px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%; /* 15px */
+    line-height: 150%; 
     text-transform: uppercase;
 
     display: flex;
@@ -143,3 +142,10 @@
     border: 0.75px solid var(--grey-1, #444);
     background: #FFF;
 } */
+
+
+/* Re-CSS */
+
+    /* post-tag CSS */
+
+/*  */
